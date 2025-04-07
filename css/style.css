@@ -1,0 +1,185 @@
+/* 全体のスタイル */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', sans-serif;
+    line-height: 1.6;
+}
+
+.app-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+/* ヘッダースタイル */
+.app-logo {
+    max-width: 80px;
+    height: auto;
+}
+
+.app-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.app-subtitle {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* ユーザー情報 */
+.user-info {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-message {
+    font-size: 1.1rem;
+    color: #212529;
+}
+
+/* スタート画面 */
+.app-description p {
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+}
+
+/* 質問画面 */
+.progress-container {
+    margin: 1.5rem 0;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.question-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #212529;
+    text-align: center;
+}
+
+.options {
+    margin: 1.5rem 0;
+}
+
+.option-item {
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-item:hover {
+    background-color: #f1f8ff;
+    border-color: #b8daff;
+}
+
+.option-item.selected {
+    background-color: #e7f4ff;
+    border-color: #007bff;
+}
+
+.option-item input[type="radio"] {
+    margin-right: 10px;
+}
+
+.option-item label {
+    display: inline-block;
+    margin-bottom: 0;
+    cursor: pointer;
+    width: calc(100% - 25px);
+}
+
+.navigation-buttons {
+    margin-top: 1.5rem;
+}
+
+/* 結果画面 */
+.result-image {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.result-image img {
+    max-width: 120px;
+    height: auto;
+}
+
+.result-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #212529;
+}
+
+.result-description {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.advice-title, .video-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.advice-content ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0;
+}
+
+.advice-content li {
+    margin-bottom: 0.5rem;
+}
+
+.video-content {
+    margin: 1rem 0;
+}
+
+.video-thumbnail {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.action-buttons {
+    margin-top: 2rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 576px) {
+    .app-title {
+        font-size: 1.6rem;
+    }
+    
+    .question-text {
+        font-size: 1.2rem;
+    }
+    
+    .result-title {
+        font-size: 1.3rem;
+    }
+    
+    .advice-title, .video-title {
+        font-size: 1.1rem;
+    }
+}
