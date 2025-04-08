@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>頭痛タイプチェック - 診断結果</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="app-wrapper">
+            <header class="text-center mb-4">
+                <h1 class="app-title">頭痛タイプチェック</h1>
+                <p class="app-subtitle">診断結果</p>
+            </header>
+
+            <div class="user-info mb-3">
+                <p class="welcome-message"><span id="userName">ゲスト</span>さんの診断結果</p>
+            </div>
+
+            <div class="result-container">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <div id="resultImage" class="result-image mb-3"></div>
+                            <h2 id="resultTitle" class="result-title">あなたの頭痛タイプ</h2>
+                        </div>
+                        
+                        <div class="result-description mb-4">
+                            <p id="resultDescription" class="p-2">結果の説明がここに表示されます</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="advice-title mb-0"><i class="fas fa-bolt me-2"></i>すぐにできる対策</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="immediateAdvice" class="advice-content"></div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="advice-title mb-0"><i class="fas fa-calendar-alt me-2"></i>中長期的な対策</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="longTermAdvice" class="advice-content"></div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="video-title mb-0"><i class="fas fa-video me-2"></i>おすすめ動画</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="videoLink" class="video-content text-center"></div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <button id="shareButton" class="btn btn-outline-primary w-100">
+                                <i class="fab fa-line me-2"></i>結果をシェア
+                            </button>
+                        </div>
+                        <div class="col-sm-6">
+                            <button id="consultButton" class="btn btn-primary w-100">
+                                <i class="fas fa-comment-medical me-2"></i>専門家に相談する
+                            </button>
+                        </div>
+                        <div class="col-12">
+                            <button id="retakeButton" class="btn btn-outline-secondary w-100">
+                                <i class="fas fa-redo me-2"></i>もう一度診断する
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="js/liff-init.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/result.js"></script>
+</body>
+</html>
