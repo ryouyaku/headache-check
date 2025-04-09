@@ -222,7 +222,7 @@ function calculateResults(answers) {
  */
 function sendResultsToBackend(result, answers) {
     // Google Apps Script WebアプリのURL
-    const gasUrl = "https://script.google.com/macros/s/AKfycbyb3IP0QJ1_BPLCaiBYwyJo_z8tFKdg7mqCJwJcZWXu0OLMgrdmjAROp51y6yXG4is/exec"; // 実際のGAS WebアプリURLに置き換えてください
+    const gasUrl = "YOUR_GAS_WEBAPP_URL"; // 実際のGAS WebアプリURLに置き換えてください
     
     // 送信データの準備
     const data = {
