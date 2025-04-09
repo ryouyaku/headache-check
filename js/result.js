@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const resultData = JSON.parse(resultDataString);
         displayResult(resultData);
         setupButtons(resultData);
+        
+        // 結果と同時にメッセージを送信（新機能）
+        sendResultMessage(resultData);
     } catch (error) {
         console.error("診断結果の解析に失敗しました", error);
         alert("エラーが発生しました。再度診断を行ってください。");
@@ -41,26 +44,17 @@ function displayResult(resultData) {
     
     // 要素を取得
     const resultTitle = document.getElementById("resultTitle");
+    const headacheTypeName = document.getElementById("headacheTypeName");
     const resultDescription = document.getElementById("resultDescription");
-    const resultImage = document.getElementById("resultImage");
     const immediateAdvice = document.getElementById("immediateAdvice");
     const longTermAdvice = document.getElementById("longTermAdvice");
     const videoLink = document.getElementById("videoLink");
     
-    // タイトルの設定
-    resultTitle.textContent = `あなたの頭痛タイプ：${headacheType.name}`;
+    // タイトルの設定（分割して表示）
+    headacheTypeName.textContent = headacheType.name;
     
     // 説明文の設定
     resultDescription.textContent = headacheType.description;
-    
-    // 画像の設定
-    resultImage.innerHTML = `
-        <img src="images/${headacheType.typeImage || 'headache.png'}" 
-             alt="${headacheType.name}" 
-             class="img-fluid rounded-circle">
-    `;
-    
-    // シンプルな2質問分岐型のため、スコア表示は不要
     
     // 即時アドバイスの設定
     let immediateAdviceHtml = "<ul class='advice-list'>";
@@ -90,21 +84,43 @@ function displayResult(resultData) {
     `;
 }
 
-// シンプルな2質問分岐型のため、重症度判定関数は不要
+/**
+ * 診断結果と同時にメッセージを送信する関数（新機能）
+ * @param {Object} resultData - 診断結果データ
+ */
+function sendResultMessage(resultData) {
+    console.log("診断結果のメッセージを送信します");
+    
+    // LIFFが利用可能な環境かチェック
+    if (liff.isInClient()) {
+        const headacheType = resultData.headacheType;
+        
+        // メッセージテキストを作成
+        const messageText = `【頭痛タイプ診断結果】\n\nあなたの頭痛タイプ：${headacheType.name}\n\n${headacheType.description}\n\n＜すぐにできる対策＞\n・${headacheType.immediateAdvice.join('\n・')}`;
+        
+        // メッセージを送信
+        liff.sendMessages([
+            {
+                type: "text",
+                text: messageText
+            }
+        ])
+        .then(() => {
+            console.log("診断結果メッセージを送信しました");
+        })
+        .catch((error) => {
+            console.error("診断結果メッセージの送信に失敗しました", error);
+        });
+    } else {
+        console.log("LINEアプリ内ではないため、メッセージ送信をスキップします");
+    }
+}
 
 /**
  * ボタンの機能を設定する関数
  * @param {Object} resultData - 診断結果データ
  */
 function setupButtons(resultData) {
-    // シェアボタンの設定
-    const shareButton = document.getElementById("shareButton");
-    if (shareButton) {
-        shareButton.addEventListener("click", function() {
-            shareResult(resultData);
-        });
-    }
-    
     // 相談ボタンの設定
     const consultButton = document.getElementById("consultButton");
     if (consultButton) {
@@ -119,52 +135,6 @@ function setupButtons(resultData) {
         retakeButton.addEventListener("click", function() {
             retakeDiagnosis();
         });
-    }
-}
-
-/**
- * 診断結果をシェアする関数
- * @param {Object} resultData - 診断結果データ
- */
-function shareResult(resultData) {
-    console.log("結果をシェアします");
-    
-    const headacheType = resultData.headacheType;
-    
-    // シェアメッセージを作成
-    const shareText = `私の頭痛タイプは「${headacheType.name}」でした！\n\n${headacheType.description}\n\n#頭痛タイプチェック #セルフケア`;
-    
-    // LIFFのAPIを使用してシェア
-    if (liff.isInClient()) {
-        liff.shareTargetPicker([
-            {
-                type: "text",
-                text: shareText
-            }
-        ])
-        .then(function(res) {
-            if (res) {
-                // シェア成功
-                console.log("Message shared successfully");
-            } else {
-                // シェアがキャンセルされた
-                console.log("ShareTargetPicker was cancelled by user");
-            }
-        })
-        .catch(function(error) {
-            // エラー処理
-            console.error("Error occurred when sharing message", error);
-        });
-    } else {
-        // ブラウザでの実行時はクリップボードにコピー
-        navigator.clipboard.writeText(shareText)
-            .then(() => {
-                alert("シェアメッセージをクリップボードにコピーしました！");
-            })
-            .catch(err => {
-                console.error('クリップボードへのコピーに失敗しました', err);
-                alert("シェアメッセージ: " + shareText);
-            });
     }
 }
 
@@ -189,12 +159,12 @@ function consultExpert(resultData) {
             }
         ])
         .then(() => {
-            console.log("Message sent successfully");
+            console.log("相談メッセージを送信しました");
             // 送信後にLIFFウィンドウを閉じる
             liff.closeWindow();
         })
         .catch((error) => {
-            console.error("Error sending message", error);
+            console.error("メッセージの送信に失敗しました", error);
             alert("メッセージの送信に失敗しました。再度お試しください。");
         });
     } else {
