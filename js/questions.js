@@ -199,88 +199,82 @@ const headacheTypes = {
         typeImage: "type2.png"
     },
     "3-4": {
-        name: "眼精疲労型頭痛（前頭部）",
-        description: "夕方に前頭部の痛みを感じやすいタイプです。目の疲れが額部分の痛みとして現れやすくなります。",
+        name: "眼精疲労、酸欠型頭痛",
+        description: "夕方前頭部に痛みがでやすいタイプです。眼精疲労の蓄積やや呼吸が浅くなって酸欠状態の可能性も。",
         immediateAdvice: [
-            "目を閉じて休める",
-            "額の軽いマッサージ",
-            "冷たいタオルで目を覆う"
+            "アイゾーンをほぐす",
+            "深呼吸をする",
+            "目を閉じたりアイマスクする"
         ],
         longTermAdvice: [
-            "画面との適切な距離の維持",
-            "目の体操の習慣化",
-            "照明環境の改善"
+            "お昼休憩の過ごし方を検討",
+            "眼科で視力のチェック"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example12",
-        recommendTitle: "目の疲れ解消法",
+        recommendedLink: "https://youtu.be/0_YL4HroyvI",
+        recommendTitle: "呼吸の方法",
         typeImage: "type3.png"
     },
     "4-1": {
-        name: "冷え・副鼻腔炎型頭痛",
-        description: "夜間にこめかみの痛みを感じやすいタイプです。頭部の冷えや副鼻腔炎が関連していることが多いです。",
+        name: "歯ぎしり、寝つきの悪さ",
+        description: "夜間、こめかみに痛みがでやすいタイプです。寝つきが悪かったり、夜間歯ぎしりしているかも。",
         immediateAdvice: [
-            "こめかみを温める",
-            "鼻を温かい蒸気で温める",
-            "温かい飲み物を飲む"
+            "肝臓を温める（レンチンものなど）",
+            "好きなアロマの香りを嗅ぐ"
         ],
         longTermAdvice: [
-            "就寝時の保温対策",
-            "耳鼻科での副鼻腔チェック",
-            "入浴習慣の見直し"
+            "マウスピースの検討",
+            "生活リズムの整え"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example13",
-        recommendTitle: "鼻腔ケアグッズ",
+        recommendedLink: "https://youtu.be/HIuFSUnCY24",
+        recommendTitle: "睡眠の質",
         typeImage: "type1.png"
     },
     "4-2": {
-        name: "イベント疲れ型頭痛",
-        description: "夜間に頭頂部の痛みを感じやすいタイプです。日中のイベントや活動による疲れが蓄積し、夜に症状として現れます。",
+        name: "イベント疲れ型頭痛、熱こもり型頭痛",
+        description: "夜間、頭頂部に痛みがでやすいタイプです。大きなイベントや肉体的疲労、暑い時期なら熱中症などの熱がこもっているかも。",
         immediateAdvice: [
-            "頭皮マッサージ",
-            "アロマテラピー（ラベンダーなど）",
-            "リラックスした入浴"
+            "梅商番茶をのむ",
+            "頭頂部のマッサージ",
+            "柑橘系の香りをかぐ"
         ],
         longTermAdvice: [
-            "活動と休息のバランス管理",
-            "睡眠の質向上",
-            "ストレス管理テクニック"
+            "貧血など栄養素の不足がないかチェック",
+            "生活の見直し"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example14",
-        recommendTitle: "質の良い睡眠のための音楽",
+        recommendedLink: "https://youtu.be/GGsk5vjISXE",
+        recommendTitle: "生活のメリハリをつける",
         typeImage: "type2.png"
     },
     "4-3": {
-        name: "凝り蓄積型頭痛",
-        description: "夜間に後頭部の痛みを感じやすいタイプです。日中の凝りが蓄積し、夜に痛みとして感じられることが多いです。",
+        name: "凝りの蓄積頭痛",
+        description: "夜間、後頭部に痛みがでやすいタイプです。慢性的な凝りが蓄積しているかも。",
         immediateAdvice: [
-            "後頭部と首のマッサージ",
-            "温めるシート貼付",
-            "入浴でのリラックス"
+            "背中のストレッチやあたため",
+            "もぐさカイロを後頭部にあてる"
         ],
         longTermAdvice: [
-            "定期的なストレッチ",
-            "寝具の見直し",
-            "マッサージや整体の利用検討"
+            "ウォーキングを週間に",
+            "溜まった凝りを治療院で解消",
+            "枕の高さ検討"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example15",
-        recommendTitle: "首こり解消グッズ",
+        recommendedLink: "https://youtu.be/41cZcDDSpk0",
+        recommendTitle: "ウォーキング",
         typeImage: "type3.png"
     },
     "4-4": {
-        name: "ストレス蓄積型頭痛",
-        description: "夜間に前頭部の痛みを感じやすいタイプです。日中のストレスが蓄積して夜に前頭部の痛みとして表れることが多いです。",
+        name: "ストレスの蓄積、慢性的な眼精疲労",
+        description: "夜間、前頭部に痛みがでやすいタイプです。ストレス、我慢が蓄積しているかも",
         immediateAdvice: [
-            "額と眉間のマッサージ",
-            "リラックス呼吸法",
-            "温かいハーブティー"
+            "好きなアロマの香りを嗅ぐ",
+            "もぐさアイマスク"
         ],
         longTermAdvice: [
-            "瞑想習慣の取り入れ",
-            "就寝前のデジタルデトックス",
-            "ストレス発散方法の確立"
+            "ストレスの原因見つめ",
+            "眼科で視力チェック",
+            "肝臓ケア"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example16",
-        recommendTitle: "ストレス解消瞑想ガイド",
+        recommendedLink: "https://youtu.be/yglo92A2BA8",
+        recommendTitle: "もぐさアイマスク",
         typeImage: "type1.png"
     }
 };
