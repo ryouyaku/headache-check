@@ -28,274 +28,253 @@ const questions = [
 const headacheTypes = {
     "1-1": {
         name: "歯ぎしり・副鼻腔炎型頭痛",
-        description: "朝にこめかみ周辺の痛みを感じやすいタイプです。歯ぎしりや副鼻腔炎が原因となっていることが多く見られます。",
+        description: "朝にこめかみの周辺の痛みを感じやすいタイプです。歯ぎしりをしていたり、副鼻腔炎などの炎症が潜んでいるかも。",
         immediateAdvice: [
-            "温かいタオルでこめかみを温める",
-            "鼻を温めるマスクを使用する",
-            "ゆっくりとした深呼吸を行う"
+            "頭皮をマッサージするように流す",
+            "迎香、攅竹を指圧する"
         ],
         longTermAdvice: [
-            "歯科医に歯ぎしりのチェックを依頼する",
+            "歯科にて歯ぎしりのチェックをしてもらう",
             "耳鼻科で副鼻腔炎の診察を受ける",
-            "マウスピースの使用を検討する"
+            "歯ぎしりの原因になるストレスを解放"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example1",
-        recommendTitle: "歯ぎしり防止マウスピース",
+        recommendedLink: "https://youtu.be/Pt24GCU1Ilc",
+        recommendTitle: "副鼻腔炎頭痛",
         typeImage: "type1.png"
     },
     "1-2": {
         name: "月経・気圧変動型頭痛",
-        description: "朝に頭頂部の痛みを感じやすいタイプです。月経周期や気圧の変化が影響していることが多いです。",
+        description: "朝に頭頂部の痛みを感じやすいタイプです。月経周期や気圧の変化が影響しているかも。",
         immediateAdvice: [
-            "頭頂部のやさしいマッサージ",
-            "温かい飲み物を摂取する",
-            "リラックスできる音楽を聴く"
+            "頭頂部のマッサージ",
+            "梅商番茶などお腹を温める飲み物を摂る",
+            "月経を軽くするためのツボ"
         ],
         longTermAdvice: [
-            "月経周期と頭痛の関係を記録する",
-            "婦人科での相談を検討する",
-            "気圧変化に備えて水分をしっかり摂る"
+            "月経周期に合わせたケア",
+            "胃腸を調えるケア"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example2",
-        recommendTitle: "ホルモンバランスを整えるストレッチ",
+        recommendedLink: "https://youtu.be/R288b0vOKvg",
+        recommendTitle: "胃のあたため",
         typeImage: "type2.png"
     },
     "1-3": {
-        name: "睡眠姿勢・睡眠質低下型頭痛",
-        description: "朝に後頭部の痛みを感じやすいタイプです。寝ている間の姿勢の緊張や睡眠の質低下が原因となることが多いです。",
+        name: "夜間の姿勢の緊張、睡眠の質低下型頭痛",
+        description: "朝に後頭部の痛みを感じやすいタイプです。夜間、寝ている間の緊張が取れていなかったり、睡眠自体の質が低下しているかも。",
         immediateAdvice: [
-            "後頭部のストレッチを行う",
-            "首のマッサージをゆっくり行う",
-            "温かいシャワーを後頭部に当てる"
+            "寝る前に背中を温める",
+            "枕に頭を押し付けるストレッチ"
         ],
         longTermAdvice: [
-            "枕の高さや硬さを見直す",
-            "就寝前のリラックス習慣を作る",
-            "睡眠環境（温度・湿度・光）の改善"
+            "背中をほぐせる青竹踏みを継続する",
+            "睡眠がとれていなければ受診でチェックを"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example3",
-        recommendTitle: "快眠サポート枕",
+        recommendedLink: "https://youtu.be/HIuFSUnCY24",
+        recommendTitle: "睡眠の質",
         typeImage: "type3.png"
     },
     "1-4": {
-        name: "不安・緊張・鼻症状型頭痛",
-        description: "朝に前頭部の痛みを感じやすいタイプです。不安や緊張、鼻の症状が関連していることが多いです。",
+        name: "不安・緊張、鼻の症状による頭痛",
+        description: "朝に前頭部の痛みを感じやすいタイプです。緊張が強く、不安があったり気が高ぶっているかも。",
         immediateAdvice: [
-            "額の軽いマッサージ",
-            "蒸しタオルで顔を温める",
-            "鼻通りを良くする深呼吸"
+            "頭皮マッサージ",
+            "片足立ち深呼吸",
+            "迎香、攅竹の指圧"
         ],
         longTermAdvice: [
-            "ストレス管理テクニックを学ぶ",
-            "アロマセラピーの活用",
-            "耳鼻科での鼻症状チェック"
+            "緊張するシーンでの思考の転換",
+            "日々、脱力する週間をつける",
+            "耳鼻科で鼻水の症状をチェック"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example4",
-        recommendTitle: "不安軽減リラクゼーション",
+        recommendedLink: "https://youtu.be/65UaEcK4zdk",
+        recommendTitle: "簡単に氣を下げる",
         typeImage: "type1.png"
     },
     "2-1": {
-        name: "緊張性頭痛（外出・会議型）",
-        description: "日中にこめかみの痛みを感じやすいタイプです。外出や会議などでの緊張が原因となることが多いです。",
+        name: "お出かけ、会議などの緊張型頭痛",
+        description: "日中、こめかみの周辺の痛みを感じやすいタイプです。お出かけや会議などで緊張が強くなってるかも。",
         immediateAdvice: [
-            "こめかみをやさしく円を描くようにマッサージ",
-            "5分間の休憩と水分補給",
-            "目を閉じて深呼吸"
+            "お出かけ前にアイゾーンを指でほぐす",
+            "休憩時間に目を閉じてリセット"
         ],
         longTermAdvice: [
-            "定期的な小休憩の習慣化",
-            "リラクゼーション技術の習得",
-            "十分な水分摂取"
+            "お出かけは計画的に、事前にアイゾーンをほぐす",
+            "もぐさアイマスク使用して睡眠をとる"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example5",
-        recommendTitle: "オフィスでできるリラクゼーション",
+        recommendedLink: "https://youtu.be/yglo92A2BA8",
+        recommendTitle: "もぐさアイマスク",
         typeImage: "type2.png"
     },
     "2-2": {
         name: "気圧・気温変動型頭痛",
-        description: "日中に頭頂部の痛みを感じやすいタイプです。気圧や気温の変化が影響していることが多いです。",
+        description: "日中、頭頂部の痛みを感じやすいタイプです。気圧の変動や気温が上がったなどの影響かも。",
         immediateAdvice: [
-            "頭皮マッサージで血行促進",
-            "水分をしっかり摂る",
-            "必要に応じて室温調整"
+            "頭頂部をマッサージ",
+            "熱の出入りがある首をマッサージ"
         ],
         longTermAdvice: [
-            "気象変化と頭痛の関係を記録する",
-            "天気予報をチェックして備える",
-            "帽子や保温グッズの活用"
+            "梅商番茶などで胃を調える",
+            "日々首筋をマッサージでほぐしておく"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example6",
-        recommendTitle: "気象病対策グッズ",
+        recommendedLink: "https://youtu.be/G5PB5ebXcYg",
+        recommendTitle: "たわしマッサージ",
         typeImage: "type3.png"
     },
     "2-3": {
-        name: "姿勢起因型頭痛",
-        description: "日中に後頭部の痛みを感じやすいタイプです。同じ姿勢での作業による背中への負担が原因となることが多いです。",
+        name: "同じ姿勢からの背中の凝り型頭痛",
+        description: "日中、後頭部の痛みを感じやすいタイプです。同じ姿勢などが原因で背中に負担がかかり、凝りが生じているかも。",
         immediateAdvice: [
-            "背筋を伸ばす軽いストレッチ",
-            "肩甲骨周りのマッサージ",
-            "姿勢を変えて休憩"
+            "脇の下ほぐし",
+            "硬い床の上で数分間脱力"
         ],
         longTermAdvice: [
-            "エルゴノミクスチェアの検討",
-            "定期的な姿勢チェックの習慣化",
-            "背中の筋肉強化エクササイズ"
+            "姿勢の矯正",
+            "日々青竹踏みを継続"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example7",
-        recommendTitle: "デスクワーク姿勢改善グッズ",
+        recommendedLink: "https://youtu.be/2ZVgdjD0SQI",
+        recommendTitle: "脇の下ほぐし",
         typeImage: "type1.png"
     },
     "2-4": {
-        name: "社交不安型頭痛",
-        description: "日中に前頭部の痛みを感じやすいタイプです。人との関わりやお出かけでの緊張が影響していることが多いです。",
+        name: "お出かけ、人との関わりの緊張型頭痛",
+        description: "日中、前頭部に痛みがでやすいタイプです。お出かけの疲れや、人との関わりの緊張による血流不全がおきているかも。",
         immediateAdvice: [
-            "前頭部の軽いタッピング",
-            "一時的に静かな場所で休憩",
-            "水分補給と深呼吸"
+            "胃を指圧してほぐす",
+            "深呼吸をする"
         ],
         longTermAdvice: [
-            "マインドフルネス瞑想の習慣化",
-            "適度な社交のペース配分",
-            "認知行動療法の検討"
+            "日頃から片足立ち深呼吸を取り入れる",
+            "人との関わりでの思考転換"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example8",
-        recommendTitle: "社交不安軽減テクニック",
+        recommendedLink: "https://youtu.be/qpot1YmJQRc",
+        recommendTitle: "胃の指圧",
         typeImage: "type2.png"
     },
     "3-1": {
-        name: "眼精疲労型頭痛（こめかみ）",
-        description: "夕方にこめかみの痛みを感じやすいタイプです。長時間の目の酷使が原因となることが多いです。",
+        name: "長時間の目の酷使型頭痛",
+        description: "夕方、こめかみに痛みがでやすいタイプです。お仕事などによる精神的ストレスや、目を酷使したことでの緊張がおこってるかも。",
         immediateAdvice: [
-            "目を温める（蒸しタオルなど）",
-            "20-20-20ルール（20分ごとに20フィート先を20秒見る）",
-            "こめかみのツボ押し"
+            "短時間でも目を瞑って休息を",
+            "もぐさアイマスクで緊張緩和",
+            "目の周りや首をマッサージ"
         ],
         longTermAdvice: [
-            "ブルーライトカットメガネの使用",
-            "定期的な眼科検診",
-            "PCやスマホの画面設定の見直し"
+            "日々の頭皮マッサージ",
+            "寝る前に肝臓を温める"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example9",
-        recommendTitle: "目の疲れ軽減アイマスク",
+        recommendedLink: "https://youtu.be/yglo92A2BA8",
+        recommendTitle: "もぐさアイマスク",
         typeImage: "type3.png"
     },
     "3-2": {
-        name: "疲労・むくみ型頭痛",
-        description: "夕方に頭頂部の痛みを感じやすいタイプです。日中の疲労蓄積やむくみが関連していることが多いです。",
+        name: "疲労、むくみ型頭痛",
+        description: "夕方、頭頂部に痛みがでやすいタイプです。疲労が溜まっていたり、水分の滞りがあるかも。",
         immediateAdvice: [
-            "足を高くして休む",
-            "水分と軽い塩分補給",
-            "頭皮マッサージ"
+            "頭頂部マッサージ",
+            "胃のあたため",
+            "梅商番茶をのむ"
         ],
         longTermAdvice: [
-            "むくみ対策（適度な運動、塩分調整）",
-            "ストレッチの習慣化",
-            "十分な休息時間の確保"
+            "胃腸の強化",
+            "むくみやすい食べ物の摂り方を調整"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example10",
-        recommendTitle: "むくみ解消ストレッチ",
+        recommendedLink: "https://youtu.be/xbR80HaCJFU",
+        recommendTitle: "食べ物の性質",
         typeImage: "type1.png"
     },
     "3-3": {
-        name: "首・背中緊張型頭痛",
-        description: "夕方に後頭部の痛みを感じやすいタイプです。首と背中の緊張が蓄積することで痛みが生じやすくなります。",
+        name: "首と背中の緊張型頭痛",
+        description: "夕方、後頭部に痛みがでやすいタイプです。お仕事や長時間の姿勢などで首に負担がかかったり、背中、腰の緊張が強くなってるかも。",
         immediateAdvice: [
-            "首のストレッチ（前後左右にゆっくり動かす）",
-            "肩を回す運動",
-            "温めるケア"
+            "帰宅後、硬い床で脱力",
+            "背中を温める",
+            "身体の前を伸ばすストレッチ"
         ],
         longTermAdvice: [
-            "姿勢改善エクササイズ",
-            "ヨガやピラティスの検討",
-            "マッサージの定期利用"
+            "青竹踏みの継続",
+            "姿勢の大きな歪みがないかチェックも必要"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example11",
-        recommendTitle: "首肩ストレッチ動画",
+        recommendedLink: "https://youtu.be/HLjjFXBKfd0",
+        recommendTitle: "短時間リセット",
         typeImage: "type2.png"
     },
     "3-4": {
-        name: "眼精疲労型頭痛（前頭部）",
-        description: "夕方に前頭部の痛みを感じやすいタイプです。目の疲れが額部分の痛みとして現れやすくなります。",
+        name: "眼精疲労、酸欠型頭痛",
+        description: "夕方前頭部に痛みがでやすいタイプです。眼精疲労の蓄積やや呼吸が浅くなって酸欠状態の可能性も。",
         immediateAdvice: [
-            "目を閉じて休める",
-            "額の軽いマッサージ",
-            "冷たいタオルで目を覆う"
+            "アイゾーンをほぐす",
+            "深呼吸をする",
+            "目を閉じたりアイマスクする"
         ],
         longTermAdvice: [
-            "画面との適切な距離の維持",
-            "目の体操の習慣化",
-            "照明環境の改善"
+            "お昼休憩の過ごし方を検討",
+            "眼科で視力のチェック"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example12",
-        recommendTitle: "目の疲れ解消法",
+        recommendedLink: "https://youtu.be/0_YL4HroyvI",
+        recommendTitle: "呼吸の方法",
         typeImage: "type3.png"
     },
     "4-1": {
-        name: "冷え・副鼻腔炎型頭痛",
-        description: "夜間にこめかみの痛みを感じやすいタイプです。頭部の冷えや副鼻腔炎が関連していることが多いです。",
+        name: "歯ぎしり、寝つきの悪さ",
+        description: "夜間、こめかみに痛みがでやすいタイプです。寝つきが悪かったり、夜間歯ぎしりしているかも。",
         immediateAdvice: [
-            "こめかみを温める",
-            "鼻を温かい蒸気で温める",
-            "温かい飲み物を飲む"
+            "肝臓を温める（レンチンものなど）",
+            "好きなアロマの香りを嗅ぐ"
         ],
         longTermAdvice: [
-            "就寝時の保温対策",
-            "耳鼻科での副鼻腔チェック",
-            "入浴習慣の見直し"
+            "マウスピースの検討",
+            "生活リズムの整え"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example13",
-        recommendTitle: "鼻腔ケアグッズ",
+        recommendedLink: "https://youtu.be/HIuFSUnCY24",
+        recommendTitle: "睡眠の質",
         typeImage: "type1.png"
     },
     "4-2": {
-        name: "イベント疲れ型頭痛",
-        description: "夜間に頭頂部の痛みを感じやすいタイプです。日中のイベントや活動による疲れが蓄積し、夜に症状として現れます。",
+        name: "イベント疲れ型頭痛、熱こもり型頭痛",
+        description: "夜間、頭頂部に痛みがでやすいタイプです。大きなイベントや肉体的疲労、暑い時期なら熱中症などの熱がこもっているかも。",
         immediateAdvice: [
-            "頭皮マッサージ",
-            "アロマテラピー（ラベンダーなど）",
-            "リラックスした入浴"
+            "梅商番茶をのむ",
+            "頭頂部のマッサージ",
+            "柑橘系の香りをかぐ"
         ],
         longTermAdvice: [
-            "活動と休息のバランス管理",
-            "睡眠の質向上",
-            "ストレス管理テクニック"
+            "貧血など栄養素の不足がないかチェック",
+            "生活の見直し"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example14",
-        recommendTitle: "質の良い睡眠のための音楽",
+        recommendedLink: "https://youtu.be/GGsk5vjISXE",
+        recommendTitle: "生活のメリハリをつける",
         typeImage: "type2.png"
     },
     "4-3": {
-        name: "凝り蓄積型頭痛",
-        description: "夜間に後頭部の痛みを感じやすいタイプです。日中の凝りが蓄積し、夜に痛みとして感じられることが多いです。",
+        name: "凝りの蓄積頭痛",
+        description: "夜間、後頭部に痛みがでやすいタイプです。慢性的な凝りが蓄積しているかも。",
         immediateAdvice: [
-            "後頭部と首のマッサージ",
-            "温めるシート貼付",
-            "入浴でのリラックス"
+            "背中のストレッチやあたため",
+            "もぐさカイロを後頭部にあてる"
         ],
         longTermAdvice: [
-            "定期的なストレッチ",
-            "寝具の見直し",
-            "マッサージや整体の利用検討"
+            "ウォーキングを週間に",
+            "溜まった凝りを治療院で解消",
+            "枕の高さ検討"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example15",
-        recommendTitle: "首こり解消グッズ",
+        recommendedLink: "https://youtu.be/41cZcDDSpk0",
+        recommendTitle: "ウォーキング",
         typeImage: "type3.png"
     },
     "4-4": {
-        name: "ストレス蓄積型頭痛",
-        description: "夜間に前頭部の痛みを感じやすいタイプです。日中のストレスが蓄積して夜に前頭部の痛みとして表れることが多いです。",
+        name: "ストレスの蓄積、慢性的な眼精疲労",
+        description: "夜間、前頭部に痛みがでやすいタイプです。ストレス、我慢が蓄積しているかも",
         immediateAdvice: [
-            "額と眉間のマッサージ",
-            "リラックス呼吸法",
-            "温かいハーブティー"
+            "好きなアロマの香りを嗅ぐ",
+            "もぐさアイマスク"
         ],
         longTermAdvice: [
-            "瞑想習慣の取り入れ",
-            "就寝前のデジタルデトックス",
-            "ストレス発散方法の確立"
+            "ストレスの原因見つめ",
+            "眼科で視力チェック",
+            "肝臓ケア"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example16",
-        recommendTitle: "ストレス解消瞑想ガイド",
+        recommendedLink: "https://youtu.be/yglo92A2BA8",
+        recommendTitle: "もぐさアイマスク",
         typeImage: "type1.png"
     }
 };
