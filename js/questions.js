@@ -151,54 +151,51 @@ const headacheTypes = {
         typeImage: "type2.png"
     },
     "3-1": {
-        name: "眼精疲労型頭痛（こめかみ）",
-        description: "夕方にこめかみの痛みを感じやすいタイプです。長時間の目の酷使が原因となることが多いです。",
+        name: "長時間の目の酷使型頭痛",
+        description: "夕方、こめかみに痛みがでやすいタイプです。お仕事などによる精神的ストレスや、目を酷使したことでの緊張がおこってるかも。",
         immediateAdvice: [
-            "目を温める（蒸しタオルなど）",
-            "20-20-20ルール（20分ごとに20フィート先を20秒見る）",
-            "こめかみのツボ押し"
+            "短時間でも目を瞑って休息を",
+            "もぐさアイマスクで緊張緩和",
+            "目の周りや首をマッサージ"
         ],
         longTermAdvice: [
-            "ブルーライトカットメガネの使用",
-            "定期的な眼科検診",
-            "PCやスマホの画面設定の見直し"
+            "日々の頭皮マッサージ",
+            "寝る前に肝臓を温める"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example9",
-        recommendTitle: "目の疲れ軽減アイマスク",
+        recommendedLink: "https://youtu.be/yglo92A2BA8",
+        recommendTitle: "もぐさアイマスク",
         typeImage: "type3.png"
     },
     "3-2": {
-        name: "疲労・むくみ型頭痛",
-        description: "夕方に頭頂部の痛みを感じやすいタイプです。日中の疲労蓄積やむくみが関連していることが多いです。",
+        name: "疲労、むくみ型頭痛",
+        description: "夕方、頭頂部に痛みがでやすいタイプです。疲労が溜まっていたり、水分の滞りがあるかも。",
         immediateAdvice: [
-            "足を高くして休む",
-            "水分と軽い塩分補給",
-            "頭皮マッサージ"
+            "頭頂部マッサージ",
+            "胃のあたため",
+            "梅商番茶をのむ"
         ],
         longTermAdvice: [
-            "むくみ対策（適度な運動、塩分調整）",
-            "ストレッチの習慣化",
-            "十分な休息時間の確保"
+            "胃腸の強化",
+            "むくみやすい食べ物の摂り方を調整"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example10",
-        recommendTitle: "むくみ解消ストレッチ",
+        recommendedLink: "https://youtu.be/xbR80HaCJFU",
+        recommendTitle: "食べ物の性質",
         typeImage: "type1.png"
     },
     "3-3": {
-        name: "首・背中緊張型頭痛",
-        description: "夕方に後頭部の痛みを感じやすいタイプです。首と背中の緊張が蓄積することで痛みが生じやすくなります。",
+        name: "首と背中の緊張型頭痛",
+        description: "夕方、後頭部に痛みがでやすいタイプです。お仕事や長時間の姿勢などで首に負担がかかったり、背中、腰の緊張が強くなってるかも。",
         immediateAdvice: [
-            "首のストレッチ（前後左右にゆっくり動かす）",
-            "肩を回す運動",
-            "温めるケア"
+            "帰宅後、硬い床で脱力",
+            "背中を温める",
+            "身体の前を伸ばすストレッチ"
         ],
         longTermAdvice: [
-            "姿勢改善エクササイズ",
-            "ヨガやピラティスの検討",
-            "マッサージの定期利用"
+            "青竹踏みの継続",
+            "姿勢の大きな歪みがないかチェックも必要"
         ],
-        recommendedLink: "https://www.youtube.com/watch?v=example11",
-        recommendTitle: "首肩ストレッチ動画",
+        recommendedLink: "https://youtu.be/HLjjFXBKfd0",
+        recommendTitle: "短時間リセット",
         typeImage: "type2.png"
     },
     "3-4": {
